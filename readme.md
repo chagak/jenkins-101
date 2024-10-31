@@ -41,7 +41,7 @@ docker run --name jenkins-blueocean --restart=on-failure --detach `
 ```
 
 
-## Get the Password
+## Get the Password. in this case since we are using docker we have to use docker exec to get into the container to be able to run the command
 ```
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 ```
