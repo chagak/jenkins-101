@@ -67,3 +67,10 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+### Other command
+docker exec -it jenkins-blueocean bash ## allows you to start an interactive bash session inside the jenkins-blueocean container
+
+## cd into /var/jenkins_home
+
+/var/jenkins_home
+cd workspace # to see the file created in jenkins
